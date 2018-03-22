@@ -1,5 +1,6 @@
 require "bundler/setup"
 require "object_path"
+require "object_path/mixin"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
