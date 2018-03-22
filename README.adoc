@@ -1,6 +1,13 @@
 ObjectPath
 ----------
 
+:source-highlighter: pygments
+
+image:https://img.shields.io/gem/v/object_path.svg["Gem Version", link="https://rubygems.org/gems/object_path"]
+image:https://img.shields.io/travis/riboseinc/object_path/master.svg["Build Status", link="https://travis-ci.org/riboseinc/object_path"]
+image:https://img.shields.io/codecov/c/github/riboseinc/object_path.svg["Test Coverage", link="https://codecov.io/gh/riboseinc/object_path"]
+image:https://img.shields.io/codeclimate/github/riboseinc/object_path.svg["Code Climate", link="https://codeclimate.com/github/riboseinc/object_path"]
+
 This gem defines the ObjectPath::Mixin to be included in any
 ruby class where the path/url of an ActiveRecord model is
 useful.
