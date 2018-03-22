@@ -33,7 +33,24 @@ $ gem install object_path
 Usage
 ~~~~~
 
-TODO: Write usage instructions here
+----
+class Notification
+  include ObjectPath::Mixin
+end
+
+n = Notification.new
+
+n.object_path(@blog_post)                         # => '/blog_posts/:id'
+n.object_path(@blog_post, :edit)                  # => '/blog_posts/:id/edit'
+n.object_path(@blog_post, :edit, context: 'next') # => '/blog_posts/:id/edit?context=next'
+n.object_path(BlogPost.new)                       # => '/blog_posts/new'
+----
+
+Include ObjectPath::Mixin in the class you want. The path of the
+model/collection and action will be generated according to the routes
+defined in your Rails application. You can also call the object_url
+method with exactly the same arguments if you want to get the url
+of the model/collection.
 
 Development
 ~~~~~~~~~~~

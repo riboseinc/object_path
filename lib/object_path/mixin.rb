@@ -149,8 +149,6 @@ module ObjectPath
       singular_route = false
       if object.respond_to?(:as_object_path)
         o = object.as_object_path
-        puts "the o..."
-        pp o
         route_method = o[:route_method] || nil
         route_params = o[:route_params] || []
         singular_route = o[:singular] || false
